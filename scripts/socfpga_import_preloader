@@ -112,7 +112,7 @@ copy_source() {
 }
 
 generate_spl() {
-	python2.7 ${embeddedsw}/embedded/ip/altera/preloader/scripts/iswgen.py -i ${handoff} -o ${splroot}/
+	python3 ${embeddedsw}/embedded/ip/altera/preloader/scripts/iswgen.py -i ${handoff} -o ${splroot}/
 }
 
 if [ -z $splroot ] || [ -z $boardroot ] || [ -z $handoff ]; then
